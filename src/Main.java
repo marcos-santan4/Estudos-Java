@@ -1,17 +1,24 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Esse é o Screen Match");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        int anoDeLancamento = 2022;
+        boolean incluidoNoPlano = true;
+        double notaDoFilme = 8.1;
+        //Media calculada pelas 3 notas de Jack, Paulo e Suelem
+        double media = (9.8 + 6.3 + 8) / 3;
+        System.out.println(media);
+        String sinopse = """
+                Filme: Top Gun: Maverick
+                Filme de aventura com galã dos anos 80;
+                Muito bom!
+                Ano de Lançamento
+                """ + anoDeLancamento;
+        System.out.println(sinopse);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // == não compara strings, apenas verifica se ambas possuem a mesma posição na string
+
+        int classificacao = (int) (media / 2); // casting -> converte a operação a frente para o tipo de variavel solicitado.
+        System.out.println(classificacao);
     }
 }
